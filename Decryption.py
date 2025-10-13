@@ -59,7 +59,7 @@ def process_save_file(autosave_file, key):
         decrypted_save = decode(encrypted_save, key)
         save_dict = json.loads(decrypted_save)
     except Exception as e:
-        print(f"解密或解析存档 {autosave_file} 失败: {e}")
+        print(f"解密存档 {autosave_file} 失败: {e}")
         return
 
     try:
